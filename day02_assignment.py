@@ -1,15 +1,15 @@
-# Chap4 연습문제 #1
-import random
+# Chap4 연습문제 #2
 
-# secret = 3
-# guess = 3
+small = True
+green = False
 
-secret = random.randint(1, 10)
-guess = random.randint(1, 10)
-
-if guess < secret:
-    print('too low')
-elif guess > secret:
-    print('too high')
+if small:
+    if green:
+        print("It's a pea")
+    else:
+        print("It's a cherry")
 else:
-    print('just right')
+    if green:
+        print("It's a watermelon")
+    else:
+        print("It's a pumpkin")
