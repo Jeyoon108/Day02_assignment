@@ -4,4 +4,4 @@ str = input("input name : ")
 str = str.capitalize()
 
 
-print("{}y Mc{}face".format(str, str))
+print(f'{str}y Mc{str}face')
