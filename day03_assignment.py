@@ -3,4 +3,5 @@
 str = input("input name : ")
 str = str.capitalize()
 
-print("%sy Mc%sface" % (str, str))
+
+print("{}y Mc{}face".format(str, str))
