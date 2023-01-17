@@ -1,9 +1,13 @@
-# Chap7 #2 ~ #3
+# Chap7 #8 ~ #9
 
-i = int(input("출생년도를 입력하세요 : "))
-year_list = []
-for k in range(0, 5+1):
-    year_list = year_list + [i+k]
+surprise = ['Groucho', 'Chico', 'Harpo']
+surprise[2] = surprise[2].lower()
+surprise_list = list(surprise[2])
+surprise_list.reverse()
+# surprise_list = list(surprise_list)
+surprise_list = ''.join(surprise_list)
+surprise_list = surprise_list.capitalize()
+surprise[2] = surprise_list
 
-print(year_list[2])
-print(year_list[5])
+print(surprise_list)
+print(surprise)
