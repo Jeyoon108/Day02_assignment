@@ -1,13 +1,5 @@
-# Chap7 #8 ~ #9
+# Chap7 #10
 
-surprise = ['Groucho', 'Chico', 'Harpo']
-surprise[2] = surprise[2].lower()
-surprise_list = list(surprise[2])
-surprise_list.reverse()
-# surprise_list = list(surprise_list)
-surprise_list = ''.join(surprise_list)
-surprise_list = surprise_list.capitalize()
-surprise[2] = surprise_list
+number_list = [number for number in range(10) if number % 2 == 0]
 
-print(surprise_list)
-print(surprise)
+print(number_list)
