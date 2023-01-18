@@ -1,15 +1,13 @@
-# Chap8 #1 ~ #5
+# Chap8 #6 ~ #9
 
-e2f = {'dog': 'chien', 'cat': 'chat', 'walrus': 'morse'}  # #1
+# 6
+life = {'animals': {'cats': 'Henri', 'octopi': 'Grumpy', 'emus': 'Lucy'}, 'plants': {}, 'other': {}}
 
-print(e2f['walrus'])  # #2
+# 7
+print(list(life.keys()))
 
-e2f_list = list(e2f.items())
-f2e = {}
-for k, v in e2f_list:
-    f2e = {**f2e, **{v: k}}
-print(f2e)  # #3
+# 8
+print(list(life['animals'].keys()))
 
-print(f2e['chien'])  # #4
-
-print(list(e2f.keys()))  # #5
+# 9
+print(life['animals']['cats'])
