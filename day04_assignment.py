@@ -1,13 +1,12 @@
-# Chap8 #6 ~ #9
+# Chap8 #10 ~ #12
 
-# 6
-life = {'animals': {'cats': 'Henri', 'octopi': 'Grumpy', 'emus': 'Lucy'}, 'plants': {}, 'other': {}}
+# 10
+squares = {k: k*k for k in range(10)}
+print(squares)
 
-# 7
-print(list(life.keys()))
+# 11
+odd_num = {o for o in range(10) if o % 2 == 1}
+print(odd_num)
 
-# 8
-print(list(life['animals'].keys()))
-
-# 9
-print(life['animals']['cats'])
+# 12
+# 제너레이터는 9장의 내용이므로 보류 추후 9장 연습문제에서 풀어볼 예정
