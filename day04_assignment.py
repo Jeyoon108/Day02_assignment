@@ -1,12 +1,16 @@
-# Chap8 #10 ~ #12
+# Chap8 #13
 
-# 10
-squares = {k: k*k for k in range(10)}
-print(squares)
+keys = ('optimist', 'pessimist', 'troll')
+values = ('The glass is half full', 'The glass is half empty', 'How did you get a glass?')
 
-# 11
-odd_num = {o for o in range(10) if o % 2 == 1}
-print(odd_num)
+zip_dict = dict(zip(keys,values))
 
-# 12
-# 제너레이터는 9장의 내용이므로 보류 추후 9장 연습문제에서 풀어볼 예정
+print(zip_dict)
+
+# Chap8 #14
+
+titles = ['Creature of Habit', 'Crewel Fate']
+plots = ['A nun turns into a monster', 'A haunted yarn shop']
+
+movie = {title: plot for title, plot in zip(titles, plots)}
+print(movie)
