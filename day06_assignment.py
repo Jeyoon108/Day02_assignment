@@ -1,22 +1,18 @@
-# practice today
+# Chap9 # 3
 
-# def k(s):
-#     def i():
-#         return print("a: '%s' " % s)
-#     return i
-#
-# a = k('D')
-# print(a)
-# a()
+def start2end(func):
+    def new_func(*args, **kwargs):
+        print(f'start func {func.__name__}')
+        result = func(*args, **kwargs)
+        print('result: ', result)
+        print('end')
+        return result
+    return new_func
 
-genobj = (pair for pair in zip(['a', 'b'], ['1', '2']))
 
-for thing in genobj:
-    print(thing)
+@start2end
+def sound():
+    print("quak, Quak")
 
-for thing in genobj:
-    print(f"{thing}!")
 
-genobj_1 = [pair for pair in zip(['a', 'b'], ['1', '2'])]
-
-print(genobj_1)
+sound()
